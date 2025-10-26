@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$primary-color: #EEE5DC;
+$secondary-color: #896555;
+$terciary-color: #814928;
+
+
+
+$font-family-general: "Manrope", sans-serif;
+$font-family-title: "Playfair Display", serif;
+
+.navbar{
+  background-color: $primary-color;
+  .nav-link{
+    color: $terciary-color;
+    font-family: $font-family-general;
+    font-weight: 400;
+    font-size: 1.2rem;
+    transition: 0.3s ease-in-out;
+    &:hover{
+      background-color: $terciary-color;
+      color:$primary-color;
+    }
+  }
+}
+
+#hero {
+  height: 100vh;
+  width: 100%;
+  background-image:url('../../img/bg-hero-gradiente.png') ;
+  background-size: cover;
+  background-position: top;
+  .logo-hero{
+    width: 256px;
+    height: 256px;
+  }
+}
+
+#cta{
+  .card{
+    background-color: $primary-color;
+    border: 1px solid $terciary-color;
+    border-radius: 8px;
+    .card-body{
+      padding: 2rem 2rem;
+      text-align: center;
+      .card-title{
+        font-family: $font-family-title;
+        font-size: 36px;
+        color:  $terciary-color;
+        margin-bottom: 1rem;
+      }
+      .card-text{
+        font-family: $font-family-general;
+        font-size: 24px;
+        color:  $terciary-color;
+        margin-bottom: 1rem;
+      }
+      .btn{
+        background-color: $terciary-color;
+        color:  $primary-color;
+        font-family: $font-family-general;
+        font-weight: 600;
+        font-size: 1rem;
+        border-radius: 8px;
+        padding: 0.75rem 1.5rem;
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        &:hover{
+          transform: translateY(-5px);
+          box-shadow: 0 8px 20px rgba(129,73,40,0.12);
+        }
+      }
+    }
+  }
+}
+
+// ===============================================
+// SEÇÃO ATUAÇÃO (ESPECIALIDADES)
+// ===============================================
+
+// Estilos gerais para os títulos das secções
+.section-subtitle {
+  font-family: $font-family-general;
+  color: $secondary-color; // Cor mais suave para o subtítulo
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-family: $font-family-title;
+  color: black;
+  font-size: 2rem; // 40px
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#atuacao {
+  // O design tem uma imagem de fundo floral bem sutil.
+  // Você precisará adicionar o caminho correto para ela.
+  background-image: url('../../img/bg-logo.png'); // <-- SUBSTITUA PELO SEU PATH
+  background-color: $primary-color; // Usa a cor primária como fundo da seção
+  background-size: cover;
+  background-position: center;
+  min-height: 75vh;
+  .card-descricao {
+    background-color: #fff; // Card da esquerda com fundo branco para destacar
+    border: 1px solid $terciary-color;
+    border-radius: 8px;
+    padding: 2.5rem;
+    height: 100%; // Garante que o card ocupe toda a altura da linha
+    display: flex;
+    flex-direction: column; // Para alinhar o botão no final
+    align-items: center;
+    .card-descricao-title {
+      font-family: $font-family-title;
+      font-size: 1.5rem;
+      color: $terciary-color;
+      margin-bottom: 1rem;
+    }
+
+    .card-descricao-text {
+      font-family: $font-family-general;
+      font-size: 1.1rem; // 18px
+      color: $secondary-color; // Cor mais suave para o texto
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+
+    }
+
+    .btn{
+      background-color: $terciary-color;
+      color:  $primary-color;
+      font-family: $font-family-general;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 8px;
+      padding: 0.75rem 1.5rem;
+      transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      &:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(129,73,40,0.12);
+      }
+    }
+  }
+
+  .especialidade-card {
+    background-color: #fff;
+    border: 1px solid $terciary-color;
+    border-radius: 8px;
+    padding: 1rem 1rem;
+    text-align: center;
+    height: 100%; // Para todos os cards terem a mesma altura
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(129, 73, 40, 0.10);
+    }
+
+    .especialidade-icon {
+      height: 68px; // Tamanho fixo para os ícones
+      width: auto;
+      margin-bottom: 1rem;
+    }
+
+    .especialidade-label {
+      font-family: $font-family-general;
+      color: $terciary-color;
+      font-size: 1rem; // 14px-15px
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 0;
+    }
+  }
+}
+
