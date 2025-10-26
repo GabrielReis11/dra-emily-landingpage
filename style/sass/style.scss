@@ -185,3 +185,230 @@ $font-family-title: "Playfair Display", serif;
   }
 }
 
+// ===============================================
+// SEÇÃO SOBRE MIM
+// ===============================================
+#sobre-mim {
+  position: relative;
+  color: $primary-color;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(rgba($terciary-color, 0.9), rgba($terciary-color, 0.9)), url('../../img/bg-sobremim.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
+  .img-sobremim {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+    // Centraliza a imagem no mobile
+    @media (max-width: 992px) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 24px;
+      max-width: 100%;
+    }
+  }
+
+  // Conteúdo da direita
+  .sobremim-content {
+
+    .section-subtitle, .section-title {
+      color: $primary-color;
+      margin: 0;
+    }
+
+    .section-subtitle {
+      opacity: 0.9;
+      font-weight: 400;
+    }
+
+    .sobremim-title-wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid $primary-color;
+      padding-bottom: 8px;
+      .logo-sobremim {
+        height: 60px;
+        width: auto;
+        margin-right: 1.5rem;
+      }
+    }
+
+    .sobremim-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 2rem;
+      margin-bottom: 2.5rem;
+
+      li {
+        font-family: $font-family-title;
+        font-size: 1.6rem;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+        position: relative;
+
+        &::before {
+          content: '•';
+          color: $primary-color;
+          font-weight: bold;
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+
+    .btn-sobremim {
+      background-color: $primary-color;
+      color: $terciary-color;
+      font-family: $font-family-general;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 8px;
+      padding: 0.75rem 1.5rem;
+      transition: 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+}
+
+// ===============================================
+// SEÇÃO AGENDAMENTO (LOCAIS)
+// ===============================================
+
+#agendamento {
+  // Mesmo fundo sutil da seção #atuacao
+  background-color: $primary-color;
+  // Você precisará adicionar o caminho correto para a imagem de fundo floral
+  // background-image: url('../../img/bg-pattern-floral.png');
+  background-size: cover;
+  background-position: center;
+
+  // Título da Cidade (Aracaju, Salvador)
+  .cidade-title {
+    font-family: $font-family-title;
+    color: $terciary-color;
+    font-size: 2rem; // 32px
+    font-weight: 600;
+    border-bottom: 2px solid $secondary-color;
+    padding-bottom: 0.5rem;
+    display: inline-block; // Para a borda não ocupar a linha toda
+  }
+
+  // Card do Local
+  .local-card {
+    background-color: #fff;            // <-- VOLTOU PARA CÁ
+    border: 1px solid $terciary-color;  // <-- VOLTOU PARA CÁ
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(129, 73, 40, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // overflow: hidden; // <-- REMOVIDO (não é mais necessário)
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(129, 73, 40, 0.12);
+    }
+
+    .local-card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      // Ajuste para a borda do card
+      border-top-left-radius: 7px;    // <-- ADICIONADO DE VOLTA
+      border-top-right-radius: 7px;   // <-- ADICIONADO DE VOLTA
+    }
+
+    .local-card-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+
+      // ===== REMOVIDO DAQUI =====
+      // background-color: #fff;
+      // border: 1px solid $terciary-color;
+      // border-top: none;
+    }
+
+    .local-card-title {
+      font-family: $font-family-title;
+      font-size: 1.5rem; // 24px
+      color: $terciary-color;
+      margin-bottom: 1rem;
+    }
+
+    .local-card-info {
+      font-family: $font-family-general;
+      color: $secondary-color;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-bottom: 0.75rem;
+      display: flex; // Para alinhar o ícone com o texto
+      align-items: flex-start;
+
+      i {
+        margin-top: 3px; // Alinha o ícone verticalmente
+        color: $terciary-color;
+      }
+    }
+
+    .local-card-buttons {
+      margin-top: auto; // Empurra os botões para o final do card
+      padding-top: 1rem; // Espaço antes dos botões
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+    }
+
+    // Classe base para os botões dos cards
+    .btn-local {
+      font-family: $font-family-general;
+      font-weight: 600;
+      font-size: 0.85rem; // Botões menores que o .btn principal
+      border-radius: 6px;
+      padding: 0.6rem 0.5rem; // Padding menor
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 1px solid $terciary-color;
+    }
+
+    // Botão Primário (Preenchido)
+    .btn-local-primary {
+      background-color: $terciary-color;
+      color: $primary-color;
+
+      &:hover {
+        background-color: darken($terciary-color, 5%);
+        color: #fff;
+      }
+    }
+
+    // Botão Secundário (Vazado)
+    .btn-local-secondary {
+      background-color: transparent;
+      color: $terciary-color;
+
+      &:hover {
+        background-color: $terciary-color;
+        color: $primary-color;
+      }
+    }
+  }
+}
+

@@ -99,54 +99,153 @@
 
                     <div class="col-xl-8">
                         <div class="row h-100 align-content-between">
-                            <div class="col-6 col-md-3 mb-4">
-                                <div class="especialidade-card">
-                                    <img src="img/icons/hugeicons_man.png" alt="Urologia masculina" class="especialidade-icon">
-                                    <h6 class="especialidade-label">Urologia masculina</h6>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-3 mb-4">
-                                <div class="especialidade-card">
-                                    <img src="img/icons/streamline-ultimate_pregnancy-sperm-1.png" alt="Infertilidade" class="especialidade-icon">
-                                    <h6 class="especialidade-label">Infertilidade</h6>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-3 mb-4">
-                                <div class="especialidade-card">
-                                    <img src="img/icons/hugeicons_woman.png" alt="Urologia feminina" class="especialidade-icon">
-                                    <h6 class="especialidade-label">Urologia feminina</h6>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-3 mb-4">
-                                <div class="especialidade-card">
-                                    <img src="img/icons/streamline-ultimate_factory-industrial-robot-arm-1.png" alt="Cirurgia robótica" class="especialidade-icon">
-                                    <h6 class="especialidade-label">Cirurgia robótica</h6>
-                                </div>
-                            </div>
 
-                            <div class="col-6 col-md-3"> <div class="especialidade-card">
-                                    <img src="img/icons/ph_drop-thin.png" alt="Disfunções urinárias" class="especialidade-icon">
-                                    <h6 class="especialidade-label">Disfunções urinárias</h6>
+                            <?php
+                            // O array $especialidades está vindo do 'include/infos.php'
+
+                            // Loop para gerar os cards
+                            foreach ($especialidades as $index => $especialidade):
+
+                                // --- INÍCIO DA NOVA LÓGICA DE CLASSES ---
+
+                                // Classes base da grid
+                                $column_classes = "col-6 col-md-3";
+
+                                // Lógica de Margem para MOBILE (2 colunas)
+                                // Adiciona 'mb-4' para todos, EXCETO os 2 últimos (index 6 e 7), que são a última fileira.
+                                if ($index < 6) {
+                                    $column_classes .= " mb-4";
+                                }
+
+                                // Lógica de Margem para DESKTOP (4 colunas)
+                                // Adiciona 'mb-md-4' para os 4 primeiros (fileira de cima)
+                                // Adiciona 'mb-md-0' para os 4 últimos (fileira de baixo),
+                                // para sobrescrever o 'mb-4' do mobile (se houver).
+                                if ($index < 4) {
+                                    $column_classes .= " mb-md-4";
+                                } else {
+                                    $column_classes .= " mb-md-0";
+                                }
+                                // --- FIM DA NOVA LÓGICA DE CLASSES ---
+                                ?>
+
+                                <div class="<?= $column_classes ?>">
+                                    <div class="especialidade-card">
+                                        <img src="img/icons/<?= htmlspecialchars($especialidade['icon']) ?>"
+                                             alt="<?= htmlspecialchars($especialidade['alt']) ?>"
+                                             class="especialidade-icon">
+                                        <h6 class="especialidade-label"><?= htmlspecialchars($especialidade['label']) ?></h6>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-6 col-md-3"> <div class="especialidade-card">
-                                    <img src="img/icons/healthicons_prostate-cancer-outline.png" alt="Oncologia urológica" class="especialidade-icon">
-                                    <h6 class="especialidade-label">Oncologia urológica</h6>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-3"> <div class="especialidade-card">
-                                    <img src="img/icons/hugeicons_gem.png" alt="Litíase" class="especialidade-icon">
-                                    <h6 class="especialidade-label">Litíase</h6>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-3"> <div class="especialidade-card">
-                                    <img src="img/icons/healthicons_baby-0203m-outline.png" alt="Urologia pediátrica" class="especialidade-icon">
-                                    <h6 class="especialidade-label">Urologia pediátrica</h6>
-                                </div>
-                            </div>
+
+                            <?php endforeach; ?>
+
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section id="sobre-mim" class="py-5 py-md-6"> <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-7 order-lg-2">
+                        <div class="sobremim-content">
+
+                            <div class="sobremim-title-wrapper">
+                                <img src="img/logo-sobremim.png" alt="" class="logo-sobremim">
+                                <div>
+                                    <h3 class="section-subtitle mb-0">Muito prazer, sou a</h3>
+                                    <h2 class="section-title">Dra. Emily Ricaldi</h2>
+                                </div>
+                            </div>
+
+                            <ul class="sobremim-list">
+                                <li>Graduação em Medicina pela Universidade Salvador - UNIFACS</li>
+                                <li>Residência Médica em Cirurgia Geral pelo Hospital Universitário da Universidade Federal de Sergipe - UFS/SE</li>
+                                <li>Residência Médica em Urologia pelas Obras Sociais Irmã Dulce - OSID/BA</li>
+                                <li>Certificação em Cirurgia Robótica pela Intuitive.</li>
+                            </ul>
+
+                            <a href="#" class="btn-sobremim">
+                                <i class="bi bi-whatsapp me-2"></i>Entre em Contato
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 order-lg-1 mb-4 mb-lg-0">
+                        <img src="img/emily-sobremim.png" alt="Dra. Emily Ricaldi" class="img-fluid img-sobremim">
+                    </div>
+
+                </div>
+        </section>
+        <section id="agendamento" class="py-5">
+            <div class="container">
+
+                <div class="row mb-4">
+                    <div class="col-12 text-center">
+                        <h3 class="section-subtitle">Locais de Atendimento</h3>
+                        <h2 class="section-title">Encontre o consultório mais próximo e<br>tenha cuidado especializado ao seu alcance.</h2>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-12 text-center"> <h2 class="cidade-title">Aracaju</h2>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <?php foreach ($locais_aracaju as $local): ?>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="local-card">
+                                <img src="img/locais-atendimento/aracaju/<?= htmlspecialchars($local['img']) ?>"
+                                     alt="<?= htmlspecialchars($local['alt']) ?>" class="local-card-img">
+                                <div class="local-card-body">
+                                    <h5 class="local-card-title"><?= htmlspecialchars($local['titulo']) ?></h5>
+                                    <p class="local-card-info">
+                                        <i class="bi bi-geo-alt-fill me-2"></i><?= htmlspecialchars($local['endereco']) ?>
+                                    </p>
+                                    <p class="local-card-info">
+                                        <i class="bi bi-telephone-fill me-2"></i><?= htmlspecialchars($local['telefone']) ?>
+                                    </p>
+                                    <div class="local-card-buttons">
+                                        <a href="#" class="btn-local btn-local-primary">Agende sua consulta</a>
+                                        <a href="#" class="btn-local btn-local-secondary">Consultar convênios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-12 text-center"> <h2 class="cidade-title">Salvador</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <?php foreach ($locais_salvador as $local): ?>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="local-card">
+                                <img src="img/locais-atendimento/salvador/<?= htmlspecialchars($local['img']) ?>"
+                                     alt="<?= htmlspecialchars($local['alt']) ?>" class="local-card-img">
+                                <div class="local-card-body">
+                                    <h5 class="local-card-title"><?= htmlspecialchars($local['titulo']) ?></h5>
+                                    <p class="local-card-info">
+                                        <i class="bi bi-geo-alt-fill me-2"></i><?= htmlspecialchars($local['endereco']) ?>
+                                    </p>
+                                    <p class="local-card-info">
+                                        <i class="bi bi-telephone-fill me-2"></i><?= htmlspecialchars($local['telefone']) ?>
+                                    </p>
+                                    <div class="local-card-buttons">
+                                        <a href="#" class="btn-local btn-local-primary">Agende sua consulta</a>
+                                        <a href="#" class="btn-local btn-local-secondary">Consultar convênios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+
             </div>
         </section>
     </main>

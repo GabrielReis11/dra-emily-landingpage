@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 * {
   margin: 0;
@@ -158,6 +159,184 @@
   font-weight: 600;
   line-height: 1.3;
   margin: 0;
+}
+
+#sobre-mim {
+  position: relative;
+  color: #EEE5DC;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(rgba(129, 73, 40, 0.9), rgba(129, 73, 40, 0.9)), url("../../img/bg-sobremim.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+#sobre-mim .img-sobremim {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 992px) {
+  #sobre-mim .img-sobremim {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    max-width: 100%;
+  }
+}
+#sobre-mim .sobremim-content .section-subtitle, #sobre-mim .sobremim-content .section-title {
+  color: #EEE5DC;
+  margin: 0;
+}
+#sobre-mim .sobremim-content .section-subtitle {
+  opacity: 0.9;
+  font-weight: 400;
+}
+#sobre-mim .sobremim-content .sobremim-title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #EEE5DC;
+  padding-bottom: 8px;
+}
+#sobre-mim .sobremim-content .sobremim-title-wrapper .logo-sobremim {
+  height: 60px;
+  width: auto;
+  margin-right: 1.5rem;
+}
+#sobre-mim .sobremim-content .sobremim-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+#sobre-mim .sobremim-content .sobremim-list li {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+#sobre-mim .sobremim-content .sobremim-list li::before {
+  content: "•";
+  color: #EEE5DC;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#sobre-mim .sobremim-content .btn-sobremim {
+  background-color: #EEE5DC;
+  color: #814928;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  transition: 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+#sobre-mim .sobremim-content .btn-sobremim:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+#agendamento {
+  background-color: #EEE5DC;
+  background-size: cover;
+  background-position: center;
+}
+#agendamento .cidade-title {
+  font-family: "Playfair Display", serif;
+  color: #814928;
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 2px solid #896555;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+#agendamento .local-card {
+  background-color: #fff;
+  border: 1px solid #814928;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(129, 73, 40, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#agendamento .local-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(129, 73, 40, 0.12);
+}
+#agendamento .local-card .local-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+#agendamento .local-card .local-card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+#agendamento .local-card .local-card-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  color: #814928;
+  margin-bottom: 1rem;
+}
+#agendamento .local-card .local-card-info {
+  font-family: "Manrope", sans-serif;
+  color: #896555;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: flex-start;
+}
+#agendamento .local-card .local-card-info i {
+  margin-top: 3px;
+  color: #814928;
+}
+#agendamento .local-card .local-card-buttons {
+  margin-top: auto;
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+#agendamento .local-card .btn-local {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  padding: 0.6rem 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid #814928;
+}
+#agendamento .local-card .btn-local-primary {
+  background-color: #814928;
+  color: #EEE5DC;
+}
+#agendamento .local-card .btn-local-primary:hover {
+  background-color: rgb(109.5355029586, 61.9852071006, 33.9644970414);
+  color: #fff;
+}
+#agendamento .local-card .btn-local-secondary {
+  background-color: transparent;
+  color: #814928;
+}
+#agendamento .local-card .btn-local-secondary:hover {
+  background-color: #814928;
+  color: #EEE5DC;
 }
 
 /*# sourceMappingURL=style.css.map */
