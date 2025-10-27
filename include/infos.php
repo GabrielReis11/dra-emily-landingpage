@@ -45,10 +45,6 @@ $especialidades = [
 ];
 
 
-// Array $especialidades (já existe)
-$especialidades = [
-    // ...
-];
 
 // NOVOS ARRAYS PARA LOCAIS DE ATENDIMENTO
 
@@ -99,4 +95,32 @@ $locais_salvador = [
         'telefone' => '(71) 3241-3241'
     ]
 ];
+
+
+// ... (seus arrays $especialidades, $locais_aracaju, $locais_salvador já existem aqui) ...
+
+
+// NOVO ARRAY PARA DEPOIMENTOS
+$depoimentos = [
+    [
+        'nome' => 'C. A.',
+        'idade' => '42 anos',
+        'local' => 'Aracaju - SE',
+        'depoimento' => 'Desde a primeira consulta, me senti acolhido e respeitado. O atendimento foi claro, humano e atencioso, transmitindo confiança em cada detalhe. Hoje sigo o tratamento com tranquilidade e gratidão por ter encontrado um profissional que realmente se importa com a minha saúde.'
+    ],
+    [
+        'nome' => 'Carlos Albuquerque',
+        'idade' => '42 anos',
+        'local' => 'Aracaju - SE',
+        'depoimento' => 'Desde a primeira consulta, me senti acolhido e respeitado. O atendimento foi claro, humano e atencioso, transmitindo confiança em cada detalhe. Hoje sigo o tratamento com tranquilidade e gratidão por ter encontrado um profissional que realmente se importa com a minha saúde.'
+    ],
+    [
+        'nome' => 'M. S.',
+        'idade' => '35 anos',
+        'local' => 'Salvador - BA',
+        'depoimento' => 'Profissional exemplar! A Dra. Emily foi muito atenciosa e paciente para explicar todo o procedimento, o que me deixou muito mais calma. Recomendo de olhos fechados.'
+    ]
+];
+
+
 

@@ -248,6 +248,57 @@
 
             </div>
         </section>
+        <section id="depoimentos" class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h2 class="depoimentos-title">o que meus pacientes<br>podem te contar?</h2>
+                        <p class="depoimentos-text">
+                            Relatos reais que refletem cuidado, dedicação e confiança em cada etapa do
+                            tratamento. Estou pronta para cuidar de você também, entre em contato!
+                        </p>
+
+                        <a href="#" class="link-agendamento"> <i class="bi bi-calendar-check me-2"></i>Agende sua consulta
+                        </a>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="owl-carousel owl-theme">
+
+                            <?php
+                            foreach ($depoimentos as $depoimento):
+                                ?>
+
+                                <div class="item">
+                                    <div class="testimonial-card">
+                                        <div class="card-header">
+                                            <img src="img/logo-nav.png" alt="" class="testimonial-header-logo">
+                                            Dra. Emily Ricaldi
+                                        </div>
+                                        <div class="card-body">
+                                            <i class="bi bi-quote quote-icon"></i>
+                                            <p class="card-text">
+                                                <?= htmlspecialchars($depoimento['depoimento']) ?>
+                                            </p>
+                                        </div>
+                                        <div class="card-author">
+                                            <i class="bi bi-person-circle me-3"></i>
+                                            <div>
+                                                <strong><?= htmlspecialchars($depoimento['nome']) ?>, <?= htmlspecialchars($depoimento['idade']) ?></strong>
+                                                <span><?= htmlspecialchars($depoimento['local']) ?></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <?php endforeach; ?>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <?php include_once 'include/scripts.php'?>
 
