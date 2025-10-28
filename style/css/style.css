@@ -6,13 +6,30 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  overflow-x: hidden;
+  position: relative;
+}
+
+#sobre-mim,
+#atuacao,
+#abordagem,
+#depoimentos,
+#agendamento {
+  scroll-margin-top: 80px;
+}
+
 .navbar {
   background-color: #EEE5DC;
 }
 .navbar .nav-link {
   color: #814928;
   font-family: "Manrope", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.2rem;
   transition: 0.3s ease-in-out;
 }
@@ -245,9 +262,12 @@
 }
 
 #agendamento {
+  position: relative;
   background-color: white;
+  background-image: url("../../img/bg-logo-atendimento.png");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 #agendamento .cidade-title {
   font-family: "Playfair Display", serif;
@@ -338,6 +358,30 @@
   background-color: #814928;
   color: #EEE5DC;
 }
+#agendamento::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 250px;
+  height: 250px;
+  background-color: #814928;
+  border-radius: 50%;
+  top: 30%;
+  left: -125px;
+  transform: translateY(-50%);
+}
+#agendamento::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 250px;
+  height: 250px;
+  background-color: #814928;
+  border-radius: 50%;
+  top: 70%;
+  right: -125px;
+  transform: translateY(-50%);
+}
 
 #depoimentos {
   background-color: #EEE5DC;
@@ -367,6 +411,9 @@
   color: #896555;
   text-decoration: none;
   transition: color 0.3s ease;
+  border: 1px solid #896555;
+  border-radius: 8px;
+  padding: 8px 16px;
 }
 #depoimentos .link-agendamento i {
   color: #814928;

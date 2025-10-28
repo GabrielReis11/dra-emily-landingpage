@@ -50,6 +50,8 @@ $especialidades = [
 
 $locais_aracaju = [
     [
+        'id' => 'uniccat',
+        'img_convenio' => 'aracaju/unicat.jpg', // <-- CAMINHO COMPLETO AQUI
         'img' => 'unicat.png',
         'alt' => 'Clínica Uniccat',
         'titulo' => 'Uniccat',
@@ -57,6 +59,8 @@ $locais_aracaju = [
         'telefone' => '(79) 3211-9007'
     ],
     [
+        'id' => 'horizonte',
+        'img_convenio' => 'aracaju/horizonte.jpg', // <-- CAMINHO COMPLETO AQUI
         'img' => 'jardins.png',
         'alt' => 'Clínica Horizonte Jardins',
         'titulo' => 'Horizonte Jardins',
@@ -64,6 +68,8 @@ $locais_aracaju = [
         'telefone' => '(79) 3251-1140'
     ],
     [
+        'id' => 'hospim',
+        'img_convenio' => 'aracaju/hosprim.jpg', // <-- CAMINHO COMPLETO AQUI
         'img' => 'hosprim.png',
         'alt' => 'Hospital do Rim',
         'titulo' => 'Hospital do Rim',
@@ -74,6 +80,8 @@ $locais_aracaju = [
 
 $locais_salvador = [
     [
+        'id' => 'auros',
+        'img_convenio' => 'salvador/auros.jpeg', // <-- CAMINHO COMPLETO AQUI
         'img' => 'auros.png',
         'alt' => 'Clínica Auros',
         'titulo' => 'Clínica Auros',
@@ -81,6 +89,8 @@ $locais_salvador = [
         'telefone' => '(71) 3101-2605'
     ],
     [
+        'id' => 'cub',
+        'img_convenio' => 'salvador/cub.jpeg', // <-- CAMINHO COMPLETO AQUI
         'img' => 'cub.png',
         'alt' => 'Clínica CUB',
         'titulo' => 'Clínica CUB',
@@ -88,6 +98,8 @@ $locais_salvador = [
         'telefone' => '(71) 3243-2053'
     ],
     [
+        'id' => 'saudemais',
+        'img_convenio' => 'salvador/saudemais.jpeg', // <-- CAMINHO COMPLETO AQUI
         'img' => 'saudemais.png',
         'alt' => 'Clínica Saúde Mais',
         'titulo' => 'Clínica Saúde Mais',

@@ -13,13 +13,27 @@ $terciary-color: #814928;
 
 $font-family-general: "Manrope", sans-serif;
 $font-family-title: "Playfair Display", serif;
+html {
+  scroll-behavior: smooth;
+}
+main {
+  overflow-x: hidden;
+  position: relative; // Garante o empilhamento correto
+}
 
+#sobre-mim,
+#atuacao,
+#abordagem,
+#depoimentos,
+#agendamento {
+  scroll-margin-top: 80px;
+}
 .navbar{
   background-color: $primary-color;
   .nav-link{
     color: $terciary-color;
     font-family: $font-family-general;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.2rem;
     transition: 0.3s ease-in-out;
     &:hover{
@@ -289,12 +303,13 @@ $font-family-title: "Playfair Display", serif;
 // ===============================================
 
 #agendamento {
+  position: relative; // MANTENHA ESTA LINHA
   // Mesmo fundo sutil da seção #atuacao
   background-color: white;
-  // Você precisará adicionar o caminho correto para a imagem de fundo floral
-  // background-image: url('../../img/bg-pattern-floral.png');
-  background-size: cover;
-  background-position: center;
+  background-image: url('../../img/bg-logo-atendimento.png');
+  background-size: cover; // Faz a imagem cobrir toda a seção
+  background-position: center center; // Centraliza a imagem
+  background-repeat: no-repeat; // Evita que a imagem se repita
 
   // Título da Cidade (Aracaju, Salvador)
   .cidade-title {
@@ -406,6 +421,38 @@ $font-family-title: "Playfair Display", serif;
       }
     }
   }
+
+  // Círculo da Esquerda
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 1; // Fica atrás do .container
+    width: 250px;  // Ajuste o tamanho conforme desejar
+    height: 250px; // Ajuste o tamanho conforme desejar
+    background-color: $terciary-color; // A cor marrom
+    border-radius: 50%;
+
+    // Posicionamento (ex: meio da tela, metade para fora)
+    top: 30%;
+    left: -125px; // Metade da largura para fora
+    transform: translateY(-50%); // Centraliza verticalmente
+  }
+
+  // Círculo da Direita
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 1; // Fica atrás do .container
+    width: 250px;  // Ajuste o tamanho conforme desejar
+    height: 250px; // Ajuste o tamanho conforme desejar
+    background-color: $terciary-color; // A cor marrom
+    border-radius: 50%;
+
+    // Posicionamento (ex: meio da tela, metade para fora)
+    top: 70%;
+    right: -125px; // Metade da largura para fora
+    transform: translateY(-50%); // Centraliza verticalmente
+  }
 }
 
 
@@ -444,7 +491,9 @@ $font-family-title: "Playfair Display", serif;
     color: $secondary-color; // Cor do texto
     text-decoration: none;
     transition: color 0.3s ease;
-
+    border: 1px solid $secondary-color;
+    border-radius: 8px;
+    padding: 8px 16px;
     i {
       color: $terciary-color; // Cor do ícone
     }

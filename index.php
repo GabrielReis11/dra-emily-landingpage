@@ -27,19 +27,16 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#sobre-mim">Sobre mim</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link " href="#atuacao">Atuação</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#depoimentos">Abordagem</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#depoimentos">Depoimentos</a>
+                            <a class="nav-link" href="#sobre-mim">Sobre mim</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="#agendamento">Agendamento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#depoimentos">Depoimentos</a>
                         </li>
                     </ul>
                 </div>
@@ -64,7 +61,7 @@
                                 <p class="card-text">
                                     “Cuidar da saúde urológica é mais do que tratar sintomas. É garantir bem-estar em cada fase da vida, com respeito, acolhimento e dedicação.” - Dra. Emily Ricaldi
                                 </p>
-                                <a href="#" class="btn">
+                                <a href="https://wa.me/+557197103059" class="btn">
                                     <i class="bi bi-whatsapp me-2"></i>Agende sua consulta
                                 </a>
                             </div>
@@ -91,7 +88,7 @@
                                 Minha especialidade é cuidado humano, tecnologia avançada e acompanhamento
                                 próximo para que você se sinta sempre seguro e acolhido.
                             </p>
-                            <a href="#" class="btn mt-auto">
+                            <a href="https://wa.me/+557197103059" class="btn mt-auto">
                                 <i class="bi bi-whatsapp me-2"></i>Agende sua consulta
                             </a>
                         </div>
@@ -166,7 +163,7 @@
                                 <li>Certificação em Cirurgia Robótica pela Intuitive.</li>
                             </ul>
 
-                            <a href="#" class="btn-sobremim">
+                            <a href="https://wa.me/+557197103059" target="_blank" class="btn-sobremim">
                                 <i class="bi bi-whatsapp me-2"></i>Entre em Contato
                             </a>
                         </div>
@@ -189,12 +186,16 @@
                 </div>
 
                 <div class="row mb-4">
-                    <div class="col-12 text-center"> <h2 class="cidade-title">Aracaju</h2>
+                    <div class="col-12 text-center">
+                        <h2 class="cidade-title">Aracaju</h2>
                     </div>
                 </div>
 
                 <div class="row mb-4">
-                    <?php foreach ($locais_aracaju as $local): ?>
+                    <?php
+                    // Loop para os locais de Aracaju (usa $locais_aracaju)
+                    foreach ($locais_aracaju as $local):
+                        ?>
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="local-card">
                                 <img src="img/locais-atendimento/aracaju/<?= htmlspecialchars($local['img']) ?>"
@@ -208,8 +209,13 @@
                                         <i class="bi bi-telephone-fill me-2"></i><?= htmlspecialchars($local['telefone']) ?>
                                     </p>
                                     <div class="local-card-buttons">
-                                        <a href="#" class="btn-local btn-local-primary">Agende sua consulta</a>
-                                        <a href="#" class="btn-local btn-local-secondary">Consultar convênios</a>
+                                        <a href="https://wa.me/+557197103059" target="_blank" class="btn-local btn-local-primary">Agende sua consulta</a>
+
+                                        <a href="#" class="btn-local btn-local-secondary"
+                                           data-bs-toggle="modal"
+                                           data-bs-target="#modal-<?= htmlspecialchars($local['id']) ?>">
+                                            Consultar convênios
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -218,12 +224,16 @@
                 </div>
 
                 <div class="row mb-4">
-                    <div class="col-12 text-center"> <h2 class="cidade-title">Salvador</h2>
+                    <div class="col-12 text-center">
+                        <h2 class="cidade-title">Salvador</h2>
                     </div>
                 </div>
 
                 <div class="row">
-                    <?php foreach ($locais_salvador as $local): ?>
+                    <?php
+                    // Loop para os locais de Salvador (usa $locais_salvador)
+                    foreach ($locais_salvador as $local):
+                        ?>
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="local-card">
                                 <img src="img/locais-atendimento/salvador/<?= htmlspecialchars($local['img']) ?>"
@@ -237,8 +247,13 @@
                                         <i class="bi bi-telephone-fill me-2"></i><?= htmlspecialchars($local['telefone']) ?>
                                     </p>
                                     <div class="local-card-buttons">
-                                        <a href="#" class="btn-local btn-local-primary">Agende sua consulta</a>
-                                        <a href="#" class="btn-local btn-local-secondary">Consultar convênios</a>
+                                        <a href="https://wa.me/+557197103059" target="_blank" class="btn-local btn-local-primary">Agende sua consulta</a>
+
+                                        <a href="#" class="btn-local btn-local-secondary"
+                                           data-bs-toggle="modal"
+                                           data-bs-target="#modal-<?= htmlspecialchars($local['id']) ?>">
+                                            Consultar convênios
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -259,7 +274,7 @@
                             tratamento. Estou pronta para cuidar de você também, entre em contato!
                         </p>
 
-                        <a href="#" class="link-agendamento"> <i class="bi bi-calendar-check me-2"></i>Agende sua consulta
+                        <a href="https://wa.me/+557197103059" class="link-agendamento"> <i class="bi bi-calendar-check me-2"></i>Agende sua consulta
                         </a>
                     </div>
 
@@ -301,6 +316,28 @@
         </section>
     </main>
     <?php include_once 'include/scripts.php'?>
+    <?php
+    // Junta os dois arrays de locais em um só
+    $todos_locais = array_merge($locais_aracaju, $locais_salvador);
 
+    // Faz um único loop para gerar todos os modais
+    foreach ($todos_locais as $local):
+        ?>
+
+        <div class="modal fade" id="modal-<?= htmlspecialchars($local['id']) ?>" tabindex="-1" aria-labelledby="label-<?= htmlspecialchars($local['id']) ?>" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="label-<?= htmlspecialchars($local['id']) ?>">Convênios - <?= htmlspecialchars($local['titulo']) ?></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="img/convenios/<?= htmlspecialchars($local['img_convenio']) ?>" alt="Convênios - <?= htmlspecialchars($local['titulo']) ?>" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <?php endforeach; ?>
 </body>
 </html>
