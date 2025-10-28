@@ -61,7 +61,7 @@
                                 <p class="card-text">
                                     “Cuidar da saúde urológica é mais do que tratar sintomas. É garantir bem-estar em cada fase da vida, com respeito, acolhimento e dedicação.” - Dra. Emily Ricaldi
                                 </p>
-                                <a href="https://wa.me/+557197103059" class="btn">
+                                <a href="https://wa.me/+557197103059" class="btn" target="_blank">
                                     <i class="bi bi-whatsapp me-2"></i>Agende sua consulta
                                 </a>
                             </div>
@@ -88,7 +88,7 @@
                                 Minha especialidade é cuidado humano, tecnologia avançada e acompanhamento
                                 próximo para que você se sinta sempre seguro e acolhido.
                             </p>
-                            <a href="https://wa.me/+557197103059" class="btn mt-auto">
+                            <a href="https://wa.me/+557197103059" class="btn mt-auto" target="_blank">
                                 <i class="bi bi-whatsapp me-2"></i>Agende sua consulta
                             </a>
                         </div>
@@ -274,7 +274,7 @@
                             tratamento. Estou pronta para cuidar de você também, entre em contato!
                         </p>
 
-                        <a href="https://wa.me/+557197103059" class="link-agendamento"> <i class="bi bi-calendar-check me-2"></i>Agende sua consulta
+                        <a href="https://wa.me/+557197103059" target="_blank" class="link-agendamento"> <i class="bi bi-calendar-check me-2"></i>Agende sua consulta
                         </a>
                     </div>
 
