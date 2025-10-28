@@ -192,10 +192,7 @@
                 </div>
 
                 <div class="row mb-4">
-                    <?php
-                    // Loop para os locais de Aracaju (usa $locais_aracaju)
-                    foreach ($locais_aracaju as $local):
-                        ?>
+                    <?php foreach ($locais_aracaju as $local): ?>
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="local-card">
                                 <img src="img/locais-atendimento/aracaju/<?= htmlspecialchars($local['img']) ?>"
@@ -211,11 +208,17 @@
                                     <div class="local-card-buttons">
                                         <a href="https://wa.me/+557197103059" target="_blank" class="btn-local btn-local-primary">Agende sua consulta</a>
 
-                                        <a href="#" class="btn-local btn-local-secondary"
-                                           data-bs-toggle="modal"
-                                           data-bs-target="#modal-<?= htmlspecialchars($local['id']) ?>">
-                                            Consultar convênios
-                                        </a>
+                                        <?php
+                                        // Só exibe o botão se o ID não for 'horizonte'
+                                        if ($local['id'] != 'horizonte'):
+                                            ?>
+                                            <a href="#" class="btn-local btn-local-secondary"
+                                               data-bs-toggle="modal"
+                                               data-bs-target="#modal-<?= htmlspecialchars($local['id']) ?>">
+                                                Consultar convênios
+                                            </a>
+                                        <?php endif; ?>
+
                                     </div>
                                 </div>
                             </div>
