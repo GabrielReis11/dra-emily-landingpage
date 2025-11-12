@@ -10,7 +10,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/css/style.css">
-    <title>Dra Emily Ferreira - Urologista</title>
+    <title>Dra Emily Ricaldi - Urologista</title>
     <link rel="icon" type="image/png" href="favicon.png"/>
     <?php include_once 'include/cdns.php'?>
     <?php include_once 'include/infos.php'?>

@@ -61,7 +61,7 @@ $locais_aracaju = [
     ],
     [
         'id' => 'horizonte',
-        'img_convenio' => 'aracaju/horizonte.jpg', // <-- CAMINHO COMPLETO AQUI
+        'img_convenio' => '', // <-- CAMINHO COMPLETO AQUI
         'img' => 'jardins.png',
         'tem_convenio' => false, // <-- ADICIONE AQUI
         'alt' => 'Clínica Horizonte Jardins',
@@ -108,6 +108,15 @@ $locais_salvador = [
         'titulo' => 'Clínica Saúde Mais',
         'endereco' => 'R. Prof. Agroriniano de Barros, 228 - Caixa d\'Água, Salvador - BA, 40323-010',
         'telefone' => '(71) 3241-3241'
+    ],
+    [
+        'id' => 'clinica-da-mulher',
+        'img_convenio' => 'salvador/saudemais.jpeg', // <-- CAMINHO COMPLETO AQUI
+        'img' => 'clinica-da-mulher.png',
+        'alt' => 'Clínica da Mulher',
+        'titulo' => 'Clínica da Mulher',
+        'endereco' => 'R. Eduardo José dos Santos, 147 - 1006 - Federação, Salvador - BA, 40210-755',
+        'telefone' => '(71) 3237-2633'
     ]
 ];
 
@@ -119,12 +128,6 @@ $locais_salvador = [
 $depoimentos = [
     [
         'nome' => 'C. A.',
-        'idade' => '42 anos',
-        'local' => 'Aracaju - SE',
-        'depoimento' => 'Desde a primeira consulta, me senti acolhido e respeitado. O atendimento foi claro, humano e atencioso, transmitindo confiança em cada detalhe. Hoje sigo o tratamento com tranquilidade e gratidão por ter encontrado um profissional que realmente se importa com a minha saúde.'
-    ],
-    [
-        'nome' => 'Carlos Albuquerque',
         'idade' => '42 anos',
         'local' => 'Aracaju - SE',
         'depoimento' => 'Desde a primeira consulta, me senti acolhido e respeitado. O atendimento foi claro, humano e atencioso, transmitindo confiança em cada detalhe. Hoje sigo o tratamento com tranquilidade e gratidão por ter encontrado um profissional que realmente se importa com a minha saúde.'
