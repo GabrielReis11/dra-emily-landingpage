@@ -271,7 +271,7 @@
                 <div class="row align-items-center">
 
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h2 class="depoimentos-title">o que meus pacientes<br>podem te contar?</h2>
+                        <h2 class="depoimentos-title">O que meus pacientes<br>podem te contar?</h2>
                         <p class="depoimentos-text">
                             Relatos reais que refletem cuidado, dedicação e confiança em cada etapa do
                             tratamento. Estou pronta para cuidar de você também, entre em contato!
