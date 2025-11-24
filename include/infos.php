@@ -117,6 +117,15 @@ $locais_salvador = [
         'titulo' => 'Clínica da Mulher',
         'endereco' => 'R. Eduardo José dos Santos, 147 - 1006 - Federação, Salvador - BA, 40210-755',
         'telefone' => '(71) 3237-2633'
+    ],
+    [
+        'id' => 'hospital-portugues',
+        'img_convenio' => 'salvador/hospitalportugues.jpeg', // <-- CAMINHO COMPLETO AQUI
+        'img' => 'hospital-portugues.png',
+        'alt' => 'Centro Médico Hospital Português ',
+        'titulo' => 'Centro Médico Hospital Português ',
+        'endereco' => 'Avenida Princesa Isabel, 914 - Barra Avenida, Salvador - BA, 40140-901',
+        'telefone' => '(71) 3203-5186'
     ]
 ];
 
