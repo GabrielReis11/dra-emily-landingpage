@@ -49,6 +49,11 @@ main {
   width: 256px;
   height: 256px;
 }
+#hero small {
+  color: white;
+  font-weight: 300;
+  font-family: "Manrope", sans-serif;
+}
 
 #cta .card {
   background-color: #EEE5DC;

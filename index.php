@@ -46,8 +46,10 @@
     <main>
         <section class="container-fluid d-flex align-items-end justify-content-center"  id="hero">
             <div class="row">
-                <div class="col-12 d-flex justify-content-center mb-5">
-                    <img src="img/logo-emily.png" alt="" class="logo-hero">
+                <div class="col-12 d-flex justify-content-center mb-5 flex-column align-items-center text-center">
+                    <img src="img/logo-emily.png" alt="" class="logo-hero mb-2">
+                    <small class="section-subtitle" >CRM-BA 32357 / RQE 27189</small>
+                    <small class="section-subtitle" >CRM-SE 6465  / RQE 5749</small>
                 </div>
             </div>
         </section>

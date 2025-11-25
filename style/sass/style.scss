@@ -53,6 +53,11 @@ main {
     width: 256px;
     height: 256px;
   }
+  small{
+    color: white;
+    font-weight: 300;
+    font-family: $font-family-general;
+  }
 }
 
 #cta{

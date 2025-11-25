@@ -111,7 +111,7 @@ $locais_salvador = [
     ],
     [
         'id' => 'clinica-da-mulher',
-        'img_convenio' => 'salvador/saudemais.jpeg', // <-- CAMINHO COMPLETO AQUI
+        'img_convenio' => 'salvador/clinicamulher.jpeg', // <-- CAMINHO COMPLETO AQUI
         'img' => 'clinica-da-mulher.png',
         'alt' => 'Clínica da Mulher',
         'titulo' => 'Clínica da Mulher',
