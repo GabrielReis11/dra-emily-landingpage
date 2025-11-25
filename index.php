@@ -46,10 +46,8 @@
     <main>
         <section class="container-fluid d-flex align-items-end justify-content-center"  id="hero">
             <div class="row">
-                <div class="col-12 d-flex justify-content-center mb-5 flex-column align-items-center text-center">
+                <div class="col-12 d-flex justify-content-center">
                     <img src="img/logo-emily.png" alt="" class="logo-hero mb-2">
-                    <small class="section-subtitle" >CRM-BA 32357 / RQE 27189</small>
-                    <small class="section-subtitle" >CRM-SE 6465  / RQE 5749</small>
                 </div>
             </div>
         </section>
@@ -337,7 +335,16 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body text-center">
-                        <img src="img/convenios/<?= htmlspecialchars($local['img_convenio']) ?>" alt="Convênios - <?= htmlspecialchars($local['titulo']) ?>" class="img-fluid">
+                        <?php
+                        // Verifica se a variavel img_convenio NAO esta vazia
+                        if (!empty($local['img_convenio'])):
+                            ?>
+                            <img src="img/convenios/<?= htmlspecialchars($local['img_convenio']) ?>"
+                                 alt="Convênios - <?= htmlspecialchars($local['titulo']) ?>"
+                                 class="img-fluid">
+                        <?php else: ?>
+                            <p class="mt-3">Consulte a disponibilidade de convênios diretamente pelo WhatsApp.</p>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
