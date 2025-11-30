@@ -30,7 +30,7 @@
                             <a class="nav-link " href="#atuacao">Atuação</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#sobre-mim">Sobre mim</a>
+                            <a class="nav-link" href="#sobre-mim">Sobre mi</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="#agendamento">Agendamento</a>
