@@ -428,36 +428,36 @@ main {
   }
 
   // Círculo da Esquerda
-  &::before {
-    content: '';
-    position: absolute;
-    z-index: 1; // Fica atrás do .container
-    width: 250px;  // Ajuste o tamanho conforme desejar
-    height: 250px; // Ajuste o tamanho conforme desejar
-    background-color: $terciary-color; // A cor marrom
-    border-radius: 50%;
-
-    // Posicionamento (ex: meio da tela, metade para fora)
-    top: 30%;
-    left: -125px; // Metade da largura para fora
-    transform: translateY(-50%); // Centraliza verticalmente
-  }
+  //&::before {
+  //  content: '';
+  //  position: absolute;
+  //  z-index: 1; // Fica atrás do .container
+  //  width: 250px;  // Ajuste o tamanho conforme desejar
+  //  height: 250px; // Ajuste o tamanho conforme desejar
+  //  background-color: $terciary-color; // A cor marrom
+  //  border-radius: 50%;
+  //
+  //  // Posicionamento (ex: meio da tela, metade para fora)
+  //  top: 30%;
+  //  left: -125px; // Metade da largura para fora
+  //  transform: translateY(-50%); // Centraliza verticalmente
+  //}
 
   // Círculo da Direita
-  &::after {
-    content: '';
-    position: absolute;
-    z-index: 1; // Fica atrás do .container
-    width: 250px;  // Ajuste o tamanho conforme desejar
-    height: 250px; // Ajuste o tamanho conforme desejar
-    background-color: $terciary-color; // A cor marrom
-    border-radius: 50%;
-
-    // Posicionamento (ex: meio da tela, metade para fora)
-    top: 70%;
-    right: -125px; // Metade da largura para fora
-    transform: translateY(-50%); // Centraliza verticalmente
-  }
+  //&::after {
+  //  content: '';
+  //  position: absolute;
+  //  z-index: 1; // Fica atrás do .container
+  //  width: 250px;  // Ajuste o tamanho conforme desejar
+  //  height: 250px; // Ajuste o tamanho conforme desejar
+  //  background-color: $terciary-color; // A cor marrom
+  //  border-radius: 50%;
+  //
+  //  // Posicionamento (ex: meio da tela, metade para fora)
+  //  top: 70%;
+  //  right: -125px; // Metade da largura para fora
+  //  transform: translateY(-50%); // Centraliza verticalmente
+  //}
 }
 
 

@@ -66,7 +66,7 @@ $locais_aracaju = [
         'tem_convenio' => false, // <-- ADICIONE AQUI
         'alt' => 'Clínica Horizonte Jardins',
         'titulo' => 'Horizonte Jardins',
-        'endereco' => 'Av. Dr. José Machado de Souza, 49 - Jardins, Aracaju - SE, 49025-740',
+        'endereco' => 'Av. José Machado de Souza, 120 - sala 1031 - Jardins, Aracaju - SE, 49025-740',
         'telefone' => '(79) 3251-1140'
     ],
     [

@@ -363,30 +363,6 @@ main {
   background-color: #814928;
   color: #EEE5DC;
 }
-#agendamento::before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  width: 250px;
-  height: 250px;
-  background-color: #814928;
-  border-radius: 50%;
-  top: 30%;
-  left: -125px;
-  transform: translateY(-50%);
-}
-#agendamento::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  width: 250px;
-  height: 250px;
-  background-color: #814928;
-  border-radius: 50%;
-  top: 70%;
-  right: -125px;
-  transform: translateY(-50%);
-}
 
 #depoimentos {
   background-color: #EEE5DC;
