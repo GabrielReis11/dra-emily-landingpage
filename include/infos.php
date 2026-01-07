@@ -51,7 +51,7 @@ $especialidades = [
 $locais_aracaju = [
     [
         'id' => 'uniccat',
-        'img_convenio' => 'aracaju/unicat.jpg', // <-- CAMINHO COMPLETO AQUI
+        'img_convenio' => 'aracaju/unicat.jpeg', // <-- CAMINHO COMPLETO AQUI
         'img' => 'unicat.png',
         'tem_convenio' => true, // <-- ADICIONE AQUI
         'alt' => 'Clínica Uniccat',
@@ -126,6 +126,27 @@ $locais_salvador = [
         'titulo' => 'Centro Médico Hospital Português ',
         'endereco' => 'Avenida Princesa Isabel, 914 - Barra Avenida, Salvador - BA, 40140-901',
         'telefone' => '(71) 3203-5186'
+    ],
+    [
+        'id' => 'graca',
+        'img_convenio' => 'salvador/graca.jpeg', // <-- CAMINHO COMPLETO AQUI
+        'img' => 'graca.jpg',
+        'alt' => 'Clínica da Graça Saúde e Estética ',
+        'titulo' => 'Clínica da Graça Saúde e Estética ',
+        'endereco' => 'R. da Graça, 374 - Graça, Salvador - BA, 40150-055',
+        'telefone' => '(71) 3016-8250'
+    ]
+];
+
+$locais_feira = [
+    [
+        'id' => 'bonfim',
+        'img_convenio' => 'feira/bonfim.jpeg', // Coloque o nome da imagem dos convênios aqui (ex: 'convenios-bonfim.png')
+        'img' => 'bonfim.jpg', // Coloque a foto da fachada aqui
+        'alt' => 'Clínica Senhor do Bonfim / Uros',
+        'titulo' => 'Clínica Senhor do Bonfim / Uros',
+        'endereco' => 'Av. Getúlio Vargas, 744 - Centro, Feira de Santana - BA, 44001-496',
+        'telefone' => '(75) 3211-1818', // Confirme se este é o telefone correto da recepção]
     ]
 ];
 
