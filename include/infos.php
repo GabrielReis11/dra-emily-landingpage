@@ -110,15 +110,6 @@ $locais_salvador = [
         'telefone' => '(71) 3241-3241'
     ],
     [
-        'id' => 'clinica-da-mulher',
-        'img_convenio' => 'salvador/clinicamulher.jpeg', // <-- CAMINHO COMPLETO AQUI
-        'img' => 'clinica-da-mulher.png',
-        'alt' => 'Clínica da Mulher',
-        'titulo' => 'Clínica da Mulher',
-        'endereco' => 'R. Eduardo José dos Santos, 147 - 1006 - Federação, Salvador - BA, 40210-755',
-        'telefone' => '(71) 3237-2633'
-    ],
-    [
         'id' => 'hospital-portugues',
         'img_convenio' => 'salvador/hospitalportugues.jpeg', // <-- CAMINHO COMPLETO AQUI
         'img' => 'hospital-portugues.png',
