@@ -161,6 +161,7 @@
                                 <li>Residência Médica em Cirurgia Geral pelo Hospital Universitário da Universidade Federal de Sergipe - UFS/SE</li>
                                 <li>Residência Médica em Urologia pelas Obras Sociais Irmã Dulce - OSID/BA</li>
                                 <li>Certificação em Cirurgia Robótica pela Intuitive.</li>
+                                <li>Professora de Técnica Cirúrgica da UNIFACS</li>
                             </ul>
 
                             <a href="https://wa.me/+557197103059" target="_blank" class="btn-sobremim">
@@ -337,7 +338,8 @@
                                         <div class="card-author">
                                             <i class="bi bi-person-circle me-3"></i>
                                             <div>
-                                                <strong><?= htmlspecialchars($depoimento['nome']) ?> <?= htmlspecialchars($depoimento['idade']) ?></strong>
+                                                <strong><?= htmlspecialchars($depoimento['nome']) ?>
+                                                    <?= htmlspecialchars($depoimento['idade']) ?></strong>
                                                 <span><?= htmlspecialchars($depoimento['local']) ?></span>
                                             </div>
                                         </div>
