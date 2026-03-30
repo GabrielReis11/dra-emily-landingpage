@@ -157,7 +157,7 @@ $depoimentos = [
         'nome' => 'A. C.',
         'idade' => '',
         'local' => 'Salvador - BA',
-        'depoimento' => 'bem atendido e a Sra. ememy é uma pessoa maravilhosa e humana adorei ser atendido por ela'
+        'depoimento' => 'bem atendido e a Sra. Emily é uma pessoa maravilhosa e humana adorei ser atendido por ela'
     ],
     [
         'nome' => 'E. C.',
