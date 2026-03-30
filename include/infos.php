@@ -148,17 +148,48 @@ $locais_feira = [
 // NOVO ARRAY PARA DEPOIMENTOS
 $depoimentos = [
     [
-        'nome' => 'C. A.',
-        'idade' => '42 anos',
-        'local' => 'Aracaju - SE',
-        'depoimento' => 'Desde a primeira consulta, me senti acolhido e respeitado. O atendimento foi claro, humano e atencioso, transmitindo confiança em cada detalhe. Hoje sigo o tratamento com tranquilidade e gratidão por ter encontrado um profissional que realmente se importa com a minha saúde.'
+        'nome' => 'B. S.',
+        'idade' => '',
+        'local' => 'Salvador - BA',
+        'depoimento' => 'Fui atendido com muito zelo, carinho, competência, e segurança no procedimento. Adotei-a como minha Urologista.Confio plenamente.'
     ],
     [
-        'nome' => 'M. S.',
-        'idade' => '35 anos',
+        'nome' => 'A. C.',
+        'idade' => '',
         'local' => 'Salvador - BA',
-        'depoimento' => 'Profissional exemplar! A Dra. Emily foi muito atenciosa e paciente para explicar todo o procedimento, o que me deixou muito mais calma. Recomendo de olhos fechados.'
-    ]
+        'depoimento' => 'bem atendido e a Sra. ememy é uma pessoa maravilhosa e humana adorei ser atendido por ela'
+    ],
+    [
+        'nome' => 'E. C.',
+        'idade' => '',
+        'local' => 'Salvador - BA',
+        'depoimento' => 'A Doutora Emily é muito competente ,atenciosa e zelosa com os pacientes. Além de ter uma excelente comunicação e retorno rápido!'
+    ],
+    [
+        'nome' => 'M. C.',
+        'idade' => '',
+        'local' => 'Salvador - BA',
+        'depoimento' => 'A cirurgia foi otima a minha recuperação esta sendo de excelência. Muito obrigado a dr Emily e a sua equipe.'
+    ],
+    [
+        'nome' => 'Y. R.',
+        'idade' => '',
+        'local' => 'Salvador - BA',
+        'depoimento' => 'Excelente. Só tenho a agradecer a Dra Emilly.'
+    ],
+    [
+        'nome' => 'M. B.',
+        'idade' => '',
+        'local' => 'Salvador - BA',
+        'depoimento' => 'Meu filho fez a cirurgia de fimose com 1ano e meio e foi ótimo! Médica super atenciosa! Recomendo demais'
+    ],
+    [
+        'nome' => 'W. A.',
+        'idade' => '',
+        'local' => 'Salvador - BA',
+        'depoimento' => 'Excelente profissional!! Recomendo demais!'
+    ],
+
 ];
 
 
