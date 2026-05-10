@@ -71,7 +71,7 @@ $locais_aracaju = [
     ],
     [
         'id' => 'hospim',
-        'img_convenio' => 'aracaju/mirai.jpg', // <-- CAMINHO COMPLETO AQUI
+        'img_convenio' => 'aracaju/mirai.jpeg', // <-- CAMINHO COMPLETO AQUI
         'img' => 'clinica-mirai.webp',
         'tem_convenio' => true, // <-- ADICIONE AQUI
         'alt' => 'Clinica Mirai',
