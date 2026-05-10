@@ -72,25 +72,16 @@ $locais_aracaju = [
     [
         'id' => 'hospim',
         'img_convenio' => 'aracaju/hosprim.jpg', // <-- CAMINHO COMPLETO AQUI
-        'img' => 'hosprim.png',
-        'tem_convenio' => true, // <-- ADICIONE AQUI
-        'alt' => 'Hospital do Rim',
-        'titulo' => 'Hospital do Rim',
-        'endereco' => 'R. Arauá, 92 - Centro, Aracaju - SE, 49010-330',
+        'img' => 'clinica-mirai.webp',
+        'tem_convenio' => false, // <-- ADICIONE AQUI
+        'alt' => 'Clinica Mirai',
+        'titulo' => 'Clinica Mirai',
+        'endereco' => 'Jardim Europa Medical Center - Av. Hélio de Souza Leão, 383 - Sala 406 - Jardins, Aracaju - SE, 49026209',
         'telefone' => '(79) 3211-9007'
     ]
 ];
 
 $locais_salvador = [
-    [
-        'id' => 'auros',
-        'img_convenio' => 'salvador/auros.jpeg', // <-- CAMINHO COMPLETO AQUI
-        'img' => 'auros.png',
-        'alt' => 'Clínica Auros',
-        'titulo' => 'Clínica Auros',
-        'endereco' => 'Av. Princesa Isabel, 514 - sala 404 - Barra, Salvador - BA, 40130-155',
-        'telefone' => '(71) 3101-2605'
-    ],
     [
         'id' => 'cub',
         'img_convenio' => 'salvador/cub.jpeg', // <-- CAMINHO COMPLETO AQUI
