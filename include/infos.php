@@ -71,9 +71,9 @@ $locais_aracaju = [
     ],
     [
         'id' => 'hospim',
-        'img_convenio' => 'aracaju/hosprim.jpg', // <-- CAMINHO COMPLETO AQUI
+        'img_convenio' => 'aracaju/mirai.jpg', // <-- CAMINHO COMPLETO AQUI
         'img' => 'clinica-mirai.webp',
-        'tem_convenio' => false, // <-- ADICIONE AQUI
+        'tem_convenio' => true, // <-- ADICIONE AQUI
         'alt' => 'Clinica Mirai',
         'titulo' => 'Clinica Mirai',
         'endereco' => 'Jardim Europa Medical Center - Av. Hélio de Souza Leão, 383 - Sala 406 - Jardins, Aracaju - SE, 49026209',
